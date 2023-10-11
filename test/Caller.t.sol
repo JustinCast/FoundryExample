@@ -10,7 +10,7 @@ contract CallerTest is Test {
     Reentrancy victim;
     Caller caller;
 
-    address personalAddr = 0xAe65930180ef4d86dbD1844275433E9e1d6311ED;
+    address personalAddr = makeAddr("personalAddr");
 
     function setUp() public {
         victim = new Reentrancy();
