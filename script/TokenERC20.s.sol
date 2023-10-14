@@ -9,7 +9,7 @@ contract TokenERC20Script is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        TokenERC20 token = new TokenERC20("Second", "2ND");
+        TokenERC20 token = new TokenERC20("Second Token", "ST");
 
         vm.stopBroadcast();
     }

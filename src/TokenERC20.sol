@@ -16,6 +16,6 @@ contract TokenERC20 is ERC20 {
 
         // Mint 100 tokens with 18 decimals
 
-        _mint(msg.sender, 100 * 10 ** uint256(decimals()));
+        _mint(msg.sender, 1000 * 10 ** uint256(decimals()));
     }
 }

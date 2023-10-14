@@ -10,12 +10,12 @@ contract TokenSwapScript is Script {
         vm.startBroadcast(deployerPrivateKey);
 
         address owner1 = 0xEC305C60FD423535411b225Df713601ae39a76B9;
-        address token1 = 0x1BE6BF13d16Dc822Ab6cA1254997c9a5e9f7df3a;
+        address token1 = 0xd66f33c35038109A4c48eB08c8246ac8c7b9eEAB;
 
         address owner2 = 0x4e4D35724ea07F382E3fc8371E9eae318149851d;
-        address token2 = 0x02D8C44B9Acf0C3749951FA18D09ae6D484B9326;
+        address token2 = 0x5292b9F654C6f8259f9e2D5582f8fC7B35E4A4C0;
 
-        TokenSwap tokenSwap = new TokenSwap(token1, owner1, owner2, token2);
+        TokenSwap tokenSwap = new TokenSwap(token1, token2, owner1, owner2);
 
         vm.stopBroadcast();
     }
